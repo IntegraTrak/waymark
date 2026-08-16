@@ -1,0 +1,50 @@
+name: 🚀 Feature Request
+description: Propose a Waymark capability or provider behavior
+labels:
+  - enhancement
+body:
+  - type: checkboxes
+    id: existing
+    attributes:
+      label: Existing proposals
+      options:
+        - label: I searched existing issues and design documents.
+          required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Who needs this, and what problem are they experiencing?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the desired workflow, provider, CLI behavior, or artifact change.
+    validations:
+      required: true
+  - type: dropdown
+    id: provider
+    attributes:
+      label: Provider scope
+      options:
+        - Provider-neutral
+        - Marten/PostgreSQL
+        - EF Core/SQL Server
+        - New provider
+        - Documentation/process
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Contract and safety impact
+      description: Note public API/CLI, migration artifact, database execution, compatibility, and testing implications.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What other approaches were considered, and why were they rejected?

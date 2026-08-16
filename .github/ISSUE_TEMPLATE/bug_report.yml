@@ -1,0 +1,51 @@
+name: 🐞 Bug Report
+description: Report an unexpected Waymark behavior
+labels:
+  - bug
+body:
+  - type: checkboxes
+    id: existing
+    attributes:
+      label: Existing reports
+      options:
+        - label: I searched existing issues for this problem.
+          required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Actual behavior
+      description: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should have happened?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
+      description: Include the provider, database engine, command, configuration, and smallest reproduction.
+      placeholder: |
+        Provider:
+        Database engine:
+        Waymark version/commit:
+        Command:
+        Steps:
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Database safety
+      description: State whether any database was started, changed, or targeted. Never include credentials or connection strings.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Logs, artifacts, or links with secrets removed.
