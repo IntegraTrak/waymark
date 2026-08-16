@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Waymark.Cli/Waymark.Cli.csproj" />
+    <Project Path="src/Waymark.EFCoreSQLServer/Waymark.EFCoreSQLServer.csproj" />
+    <Project Path="src/Waymark.MartenPostgres/Waymark.MartenPostgres.csproj" />
+    <Project Path="src/Waymark/Waymark.csproj" />
+  </Folder>
+  <Folder Name="/src/Tests/">
+    <Project Path="src/Tests/Waymark.Tests/Waymark.Tests.csproj" />
+  </Folder>
+</Solution>
