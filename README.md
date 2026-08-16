@@ -42,9 +42,11 @@ The current implementation plan is based on:
 - [Provider-agnostic migration vision](docs/design/2026-08-16-waymark-provider-agnostic-migration-vision.md)
 - [Project foundation](docs/design/20260816-waymark-project-foundation.md)
 
-## Sable reference
+## Inspired by Sable
 
-Waymark is an independent project. The archived [Sable repository](https://github.com/gabrewer/sable) is used as a read-only reference for Marten/PostgreSQL behavior and isolated database workflows. Waymark will make its own decisions about APIs, CLI contracts, migration artifacts, dependencies, versioning, signing, packaging, and build automation.
+Waymark is deeply inspired by the ideas and engineering work in the archived [Sable repository](https://github.com/gabrewer/sable), especially its use of an isolated PostgreSQL database to safely materialize application schemas and generate migration changes. Sable demonstrated a powerful way to make migration generation practical for Marten applications, and it provides an important reference point for Waymark's first provider.
+
+Waymark is an independent project rather than a rebranding or mechanical fork. We are extending the core idea beyond Marten to support multiple migration providers, beginning with Marten/PostgreSQL and EF Core/SQL Server, while making our own decisions about APIs, CLI contracts, migration artifacts, dependencies, versioning, signing, packaging, and build automation.
 
 ## Development
 
