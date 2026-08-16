@@ -7,7 +7,9 @@
 
 The archived Sable project is being used as a reference for a new, independent project. Waymark is not intended to be a mechanical rename of Sable or an inheritance of the original repository's tooling and architectural choices.
 
-The original Sable repository remains untouched and is retained separately as a read-only reference.
+The original Sable repository remains untouched and is retained separately as a read-only reference:
+
+- GitHub: https://github.com/gabrewer/sable
 
 ## Decisions
 

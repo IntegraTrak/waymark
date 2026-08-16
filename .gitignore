@@ -22,3 +22,6 @@ TestResults/
 ## Local secrets
 .env
 .env.*
+
+## Pi runtime files
+.pi/tmp/

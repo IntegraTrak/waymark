@@ -1,0 +1,16 @@
+{
+  "pm-agent": { "provider": "openai-codex", "model": "gpt-5.4", "thinking": "high" },
+  "team-lead": { "provider": "openai-codex", "model": "gpt-5.4", "thinking": "high" },
+  "pr-checkpoint": { "provider": "openai-codex", "model": "gpt-5.4-mini", "thinking": "medium" },
+  "inspire": { "provider": "openai-codex", "model": "gpt-5.4", "thinking": "medium" },
+  "brainstorm": { "provider": "openai-codex", "model": "gpt-5.4", "thinking": "high" },
+  "product-designer": { "provider": "openai-codex", "model": "gpt-5.4-mini", "thinking": "medium" },
+  "pm": { "provider": "openai-codex", "model": "gpt-5.4-mini", "thinking": "medium" },
+  "domain-modeler": { "provider": "openai-codex", "model": "gpt-5.4", "thinking": "high" },
+  "api-developer": { "provider": "openai-codex", "model": "gpt-5.4", "thinking": "high" },
+  "dotnet-builder": { "provider": "openai-codex", "model": "gpt-5.4", "thinking": "high" },
+  "test-writer": { "provider": "openai-codex", "model": "gpt-5.4-mini", "thinking": "medium" },
+  "destroyer": { "provider": "openai-codex", "model": "gpt-5.4", "thinking": "high" },
+  "review-agent": { "provider": "openai-codex", "model": "gpt-5.4", "thinking": "high" },
+  "git-committer": { "provider": "openai-codex", "model": "gpt-5.4-mini", "thinking": "medium" }
+}
