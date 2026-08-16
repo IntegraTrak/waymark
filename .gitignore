@@ -1,0 +1,24 @@
+## .NET
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+## Build output
+artifacts/
+
+## IDE and OS
+.idea/
+.DS_Store
+
+## Test output
+TestResults/
+
+## NuGet
+*.nupkg
+*.snupkg
+
+## Local secrets
+.env
+.env.*
