@@ -10,7 +10,7 @@ The approved foundation document is `docs/design/20260816-waymark-project-founda
 
 Sable reference:
 
-- GitHub: https://github.com/gabrewer/sable
+- GitHub: https://github.com/bloomberg/sable
 - Local reference on the development machine: `X:\source\sable`
 
 ## Repository conventions and current tooling
@@ -23,7 +23,7 @@ Sable reference:
 
 ## Sable reference audit
 
-The archived Sable source was reviewed at `X:\source\sable\main` and https://github.com/gabrewer/sable. It is a .NET 10 solution with:
+The Sable code used for parity analysis is maintained in the development fork at `https://github.com/gabrewer/sable` and locally at `X:\source\sable\main`. The upstream project is `https://github.com/bloomberg/sable`. It is a .NET 10 solution with:
 
 - `src/Sable/`: Marten service-registration integration and connection-string override behavior.
 - `src/Sable.Cli/`: the `sable` .NET tool, Spectre.Console commands, migration generation, SQL composition, shadow PostgreSQL containers, and database updates.
