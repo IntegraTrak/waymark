@@ -44,7 +44,7 @@ The current implementation plan is based on:
 
 ## Inspired by Sable
 
-Waymark is deeply inspired by the ideas and engineering work in the archived [Sable repository](https://github.com/gabrewer/sable), especially its use of an isolated PostgreSQL database to safely materialize application schemas and generate migration changes. Sable demonstrated a powerful way to make migration generation practical for Marten applications, and it provides an important reference point for Waymark's first provider.
+Waymark is deeply inspired by the ideas and engineering work in the archived [Sable repository](https://github.com/bloomberg/sable), especially its use of an isolated PostgreSQL database to safely materialize application schemas and generate migration changes. Sable demonstrated a powerful way to make migration generation practical for Marten applications, and it provides an important reference point for Waymark's first provider.
 
 Waymark is an independent project rather than a rebranding or mechanical fork. We are extending the core idea beyond Marten to support multiple migration providers, beginning with Marten/PostgreSQL and EF Core/SQL Server, while making our own decisions about APIs, CLI contracts, migration artifacts, dependencies, versioning, signing, packaging, and build automation.
 
