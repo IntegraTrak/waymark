@@ -5,8 +5,8 @@
   </Folder>
   <Folder Name="/src/">
     <Project Path="src/Waymark.Cli/Waymark.Cli.csproj" />
-    <Project Path="src/Waymark.EFCoreSQLServer/Waymark.EFCoreSQLServer.csproj" />
-    <Project Path="src/Waymark.MartenPostgres/Waymark.MartenPostgres.csproj" />
+    <Project Path="src/Providers/Waymark.EFCoreSQLServer/Waymark.EFCoreSQLServer.csproj" />
+    <Project Path="src/Providers/Waymark.MartenPostgres/Waymark.MartenPostgres.csproj" />
     <Project Path="src/Waymark/Waymark.csproj" />
   </Folder>
   <Folder Name="/src/Tests/">

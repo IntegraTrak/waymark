@@ -1,12 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\Waymark\Waymark.csproj" />
+    <ProjectReference Include="..\..\Waymark\Waymark.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Npgsql" Version="10.0.3" />
-    <PackageReference Include="Testcontainers.PostgreSql" Version="4.14.0" />
+    <PackageReference Include="Testcontainers.MsSql" Version="4.14.0" />
   </ItemGroup>
 
   <PropertyGroup>
