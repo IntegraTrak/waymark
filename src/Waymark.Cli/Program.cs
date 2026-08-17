@@ -102,7 +102,7 @@ sealed class AddCommand : AsyncCommand<AddSettings>
         }
 
         var adapter = provider == ProviderId.MartenPostgresql
-            ? (IProviderAdapter)new Waymark.MartenPostgres.MartenPostgresAdapter()
+            ? (IMigrationProvider)new Waymark.MartenPostgres.MartenPostgresAdapter()
             : new Waymark.EFCoreSQLServer.EfCoreSqlServerAdapter();
         var request = new MigrationRequest(
             provider,

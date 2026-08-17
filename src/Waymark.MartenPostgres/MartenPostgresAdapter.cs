@@ -3,7 +3,7 @@ using Waymark;
 
 namespace Waymark.MartenPostgres;
 
-public sealed class MartenPostgresAdapter : IProviderAdapter
+public sealed class MartenPostgresAdapter : IMigrationProvider
 {
     public ProviderId Provider => ProviderId.MartenPostgresql;
     public DatabaseEngine DatabaseEngine => DatabaseEngine.PostgreSql;
