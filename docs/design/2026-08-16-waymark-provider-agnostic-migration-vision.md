@@ -83,4 +83,4 @@ Sable's Cake build, package identities, signing key, and repository automation a
 
 ## Next step
 
-Define the provider-neutral contracts and a narrow Marten/PostgreSQL vertical slice before implementing broad CLI parity or adding EF Core/SQL Server support.
+Define the provider-neutral contracts and build dogfoodable sample applications for both Marten/PostgreSQL and EF Core/SQL Server. Use those samples to implement and validate paired narrow provider vertical slices before expanding CLI parity or adding further providers.
