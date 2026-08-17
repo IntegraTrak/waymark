@@ -96,7 +96,7 @@ public interface IIsolatedDatabaseEnvironment : IAsyncDisposable
     Task StartAsync(CancellationToken cancellationToken = default);
 }
 
-public interface IProviderAdapter
+public interface IMigrationProvider
 {
     ProviderId Provider { get; }
     DatabaseEngine DatabaseEngine { get; }

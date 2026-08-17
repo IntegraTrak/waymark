@@ -1,11 +1,11 @@
 namespace Waymark;
 
-public sealed class ProviderRegistry(IEnumerable<IProviderAdapter> adapters)
+public sealed class ProviderRegistry(IEnumerable<IMigrationProvider> adapters)
 {
-    private readonly IReadOnlyDictionary<ProviderId, IProviderAdapter> _adapters =
+    private readonly IReadOnlyDictionary<ProviderId, IMigrationProvider> _adapters =
         adapters.ToDictionary(adapter => adapter.Provider);
 
-    public IProviderAdapter Resolve(ProviderId provider) =>
+    public IMigrationProvider Resolve(ProviderId provider) =>
         _adapters.TryGetValue(provider, out var adapter)
             ? adapter
             : throw new MigrationContractException($"Provider '{provider}' is not registered.");

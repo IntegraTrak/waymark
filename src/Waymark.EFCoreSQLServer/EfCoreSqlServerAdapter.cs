@@ -3,7 +3,7 @@ using Waymark;
 
 namespace Waymark.EFCoreSQLServer;
 
-public sealed class EfCoreSqlServerAdapter : IProviderAdapter
+public sealed class EfCoreSqlServerAdapter : IMigrationProvider
 {
     public ProviderId Provider => ProviderId.EfCoreSqlServer;
     public DatabaseEngine DatabaseEngine => DatabaseEngine.SqlServer;
