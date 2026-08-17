@@ -39,9 +39,21 @@ The final NuGet publisher is intentionally undecided. Candidates discussed were 
 - Initial branch: `bootstrap/waymark-foundation`
 - The repository currently contains only foundational files and the `docs/design` directory.
 
+The initial solution should contain the following projects under `src/`:
+
+```text
+Waymark
+Waymark.Cli
+Waymark.MartenPostgres
+Waymark.EFCoreSQLServer
+Tests/...
+```
+
+Provider implementations remain projects in the solution, not separate NuGet packages, for the first slice. Sample applications belong under `samples/`; tests belong under `src/Tests/`.
+
 ### Build and tooling
 
-Waymark will not use Cake initially. The preferred build approach is the native .NET SDK and MSBuild commands:
+Waymark targets .NET 10. Waymark will not use Cake initially. The preferred build approach is the native .NET SDK and MSBuild commands:
 
 ```text
 dotnet restore
@@ -49,6 +61,8 @@ dotnet build
 dotnet test
 dotnet pack
 ```
+
+The initial CLI will use Spectre.Console.Cli for command parsing and Spectre.Console for terminal output.
 
 CI, packaging, and publishing workflows will be designed explicitly for Waymark. No Sable build, release, or repository automation will be copied unchanged.
 
