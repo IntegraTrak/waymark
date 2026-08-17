@@ -23,8 +23,8 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Waymark\Waymark.csproj" />
     <ProjectReference Include="..\..\Waymark.Cli\Waymark.Cli.csproj" />
-    <ProjectReference Include="..\..\Waymark.MartenPostgres\Waymark.MartenPostgres.csproj" />
-    <ProjectReference Include="..\..\Waymark.EFCoreSQLServer\Waymark.EFCoreSQLServer.csproj" />
+    <ProjectReference Include="..\..\Providers\Waymark.MartenPostgres\Waymark.MartenPostgres.csproj" />
+    <ProjectReference Include="..\..\Providers\Waymark.EFCoreSQLServer\Waymark.EFCoreSQLServer.csproj" />
   </ItemGroup>
 
 </Project>
